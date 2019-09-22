@@ -1,0 +1,11 @@
+.container-fluid.full-height.homepage-wrapper.text-center.relative
+  .homepage-copyright-footer © 2019 FreeAtlantaMove.com
+  .row
+    .col-sm-12.col-md-12.col-lg-12
+      = image_tag 'fam-truck-with-white-text.png', class: 'homepage-logo'
+      %p.homepage-form-header You are only one step from a FREE move!
+    .col-sm-12.col-md-12.col-lg-12
+      = form_tag '/', method: :get do
+        = label_tag 'Email:', nil, class: 'homepage-form-label'
+        = text_field_tag 'email', nil, class: 'homepage-form-input'
+        = submit_tag 'Submit', class: 'homepage-form-submit'
